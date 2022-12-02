@@ -1,76 +1,58 @@
-import React from "react";
+import React from 'react';
 import {
-    SidebarContainer,
-    Icon,
-    CloseIcon,
-    SidebarMenu,
-    SidebarLink,
-    SidebarBtnWrap,
-    SidebarRoute,
-} from "./SidebarElements";
+  SidebarContainer,
+  Icon,
+  CloseIcon,
+  SidebarMenu,
+  SidebarLink
+  // SidebarBtnWrap,
+  // SidebarRoute
+} from './SidebarElements';
 
 interface Props {
-    isOpen: boolean;
-    toggle: () => void;
+  isOpen: boolean;
+  toggle: () => void;
 }
 
 const Sidebar = ({ isOpen, toggle }: Props) => {
-    return (
-        <>
-            <SidebarContainer isOpen={isOpen} onClick={toggle}>
-                <Icon>
-                    <CloseIcon />
-                </Icon>
-                <SidebarMenu>
-                    <SidebarLink
-                        to="about"
-                        onClick={toggle}
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                    >
-                        Nosotros
-                    </SidebarLink>
-                    <SidebarLink
-                        to="schedule"
-                        onClick={toggle}
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                    >
-                        Programa
-                    </SidebarLink>
-                    <SidebarLink
-                        to="speakers"
-                        onClick={toggle}
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                    >
-                        Presentadores
-                    </SidebarLink>
-                    <SidebarLink
-                        to="subscribe"
-                        onClick={toggle}
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                    >
-                        Reservas
-                    </SidebarLink>
-                    <SidebarLink
-                        to="location"
-                        onClick={toggle}
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                    >
-                        Lugar y Hora
-                    </SidebarLink>
-                </SidebarMenu>
-            </SidebarContainer>
-        </>
-    );
+  return (
+    <>
+      <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <Icon>
+          <CloseIcon />
+        </Icon>
+        <SidebarMenu>
+          <SidebarLink
+            to='about'
+            onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+          >
+            Tujuan
+          </SidebarLink>
+          <SidebarLink
+            to='schedule'
+            onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+          >
+            Agenda
+          </SidebarLink>
+          <SidebarLink
+            to='here'
+            onClick={toggle}
+            smooth={true}
+            duration={500}
+            spy={true}
+          >
+            Bergabung
+          </SidebarLink>
+        </SidebarMenu>
+      </SidebarContainer>
+    </>
+  );
 };
 
 export default Sidebar;

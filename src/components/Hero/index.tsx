@@ -1,34 +1,31 @@
-import React from "react";
+import React from 'react';
 import {
-    Container,
-    TitleContainer,
-    SubTitle,
-    Title,
-    Location,
-    Company,
-    Date,
-    Button,
-    Image,
-} from "./HeroStyles";
-import { FaMapMarkerAlt, FaCheckCircle } from "react-icons/fa";
+  Container,
+  TitleContainer,
+  SubTitle,
+  Title,
+  Location,
+  Date,
+  Button
+} from './HeroStyles';
+import { FaMapMarkerAlt, FaCheckCircle } from 'react-icons/fa';
 
 const Hero: React.FC = () => {
-    return (
-        <Container id="hero">
-            <Location>
-                <FaMapMarkerAlt /> Tucuman, Argentina
-            </Location>
-            <TitleContainer>
-                <SubTitle>Seminario Anual</SubTitle>
-                <Title>SOFTWARE XXI</Title>
-                <Company>Presentado por Vercel</Company>
-            </TitleContainer>
-            <Date>NOVIEMBRE 19 - 22</Date>
-            <Button to="subscribe" smooth={true} duration={500} spy={true}>
-                Reserva tu lugar <FaCheckCircle />
-            </Button>
-        </Container>
-    );
+  return (
+    <Container id='hero'>
+      <Date>20 - 22 Januari 2023</Date>
+      <TitleContainer>
+        <SubTitle>Kongres Nasional VII</SubTitle>
+        <Title>Front Perjuangan Pemuda Indonesia</Title>
+      </TitleContainer>
+      <Location>
+        <FaMapMarkerAlt /> Jakarta, Indonesia
+      </Location>
+      <Button to='here' smooth={true} duration={500} spy={true}>
+        Bergabung <FaCheckCircle />
+      </Button>
+    </Container>
+  );
 };
 
 export default Hero;

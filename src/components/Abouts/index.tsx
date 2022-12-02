@@ -1,43 +1,35 @@
-import React from 'react';
 import {
   Container,
-  InfoContainer,
-  InfoTitle,
-  InfoSubTitle,
+  Image,
+  Info,
   InfoText,
   InfoItem,
   Button,
-  CardsContainer,
-  Card,
-  CardIcon,
-  CardNumber,
-  CardText,
-  CardTitle
-} from './AboutStyles';
+  InfoTitle
+} from './Abouts';
 
 import {
   FaMapMarkerAlt,
-  FaRegComments,
-  FaCalendarAlt,
-  FaUsers
+  // FaRegComments,
+  FaCalendarAlt
+  // FaUsers
 } from 'react-icons/fa';
 
-import { GiPublicSpeaker, GiPartyPopper } from 'react-icons/gi';
-
-const About: React.FC = () => {
+const Abouts: React.FC = () => {
   return (
-    <Container>
-      <InfoContainer>
+    <Container id='about'>
+      <Info>
         <div>
           <InfoTitle>Kongres Nasional</InfoTitle>
         </div>
         <div>
           <InfoText>
-            Bertujuan untuk akan melahirkan ide, gagasan dan rekomendasi sebagai
-            evaluasi organisasi serta sebagai arah tujuan dalam organisasi serta
-            menyusun kembali program kerja yang didasarkan pada gagasan nasional
-            demokrasi kerakyatan (NADEMKRA) merupakan langkah-langkah yang
-            selama ini dilakukan oleh FPPI.
+            Bertujuan untuk melahirkan ide, gagasan dan rekomendasi sebagai
+            evaluasi organisasi sebagai arah tujuan dalam organisasi kedepan
+            serta menyusun kembali program kerja yang didasarkan pada gagasan
+            nasional demokrasi kerakyatan (NADEMKRA) merupakan langkah-langkah
+            yang selama ini dilakukan oleh FPPI di berbagai masing-masing
+            sektoral.
           </InfoText>
         </div>
         <div>
@@ -59,9 +51,10 @@ const About: React.FC = () => {
         <Button to='here' smooth={true} duration={500} spy={true}>
           Bergabung
         </Button>
-      </InfoContainer>
+      </Info>
+      <Image />
     </Container>
   );
 };
 
-export default About;
+export default Abouts;

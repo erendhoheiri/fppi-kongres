@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
     *{
@@ -16,12 +16,12 @@ export default createGlobalStyle`
     :root{
         --color-white:#ffffff;
         --color-white-2:#F0EFF4;
-        --color-primary-darken:#121a0a;
-        --color-primary-black:#293F14;
-        --color-primary-dark:#386C0B;
-        --color-primary:#38A700;
-        --color-primary-strong: #31D843;
-        --color-primary-light:#3EFF8B;
+        --color-primary-darken:#800000;
+        --color-primary-black:#8B0000;
+        --color-primary-dark:#8B0000;
+        --color-primary:#8B0000;
+        --color-primary-strong: #DC143C;
+        --color-primary-light:#CD5C5C;
         --color-secondary:#CA054D;
         --color-black: #000000;
         --color-black-2: 	#101010;
@@ -98,7 +98,7 @@ export default createGlobalStyle`
             rgba(191, 191, 191, 0.04) 50%,
             rgba(191, 191, 191, 0.04) 100%
         ),
-        linear-gradient(130deg, rgb(5, 235, 123), rgb(47, 52, 6));
+        linear-gradient(45deg, rgba(150, 40, 27), rgba(207, 0, 15));
         --gradient-primary-2:radial-gradient(
             circle at 85% 1%,
             hsla(190, 0%, 93%, 0.05) 0%,
@@ -134,7 +134,7 @@ export default createGlobalStyle`
             transparent 52%,
             transparent 100%
         ),
-        linear-gradient(135deg, rgb(56, 108, 11), rgb(56, 167, 0));
+        linear-gradient(135deg, rgba(150, 40, 27), rgba(207, 0, 15)),;
 
         --gradient-white-2: radial-gradient(circle at 57% 36%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 10%,transparent 10%, transparent 100%),radial-gradient(circle at 22% 61%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 36%,transparent 36%, transparent 100%),radial-gradient(circle at 68% 97%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 41%,transparent 41%, transparent 100%),radial-gradient(circle at 57% 89%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 30%,transparent 30%, transparent 100%),radial-gradient(circle at 39% 80%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 88% 71%, hsla(263,0%,78%,0.04) 0%, hsla(263,0%,78%,0.04) 30%,transparent 30%, transparent 100%),linear-gradient(0deg, rgb(255,255,255),rgb(255,255,255));
     }
