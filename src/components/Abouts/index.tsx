@@ -27,9 +27,8 @@ const Abouts: React.FC = () => {
             Bertujuan untuk melahirkan ide, gagasan dan rekomendasi sebagai
             evaluasi organisasi sebagai arah tujuan dalam organisasi kedepan
             serta menyusun kembali program kerja yang didasarkan pada gagasan
-            nasional demokrasi kerakyatan (NADEMKRA) merupakan langkah-langkah
-            yang selama ini dilakukan oleh FPPI di berbagai masing-masing
-            sektoral.
+            nasional demokrasi kerakyatan (NADEMKRA) sebagai langkah-langkah
+            FPPI di berbagai masing-masing sektoral.
           </InfoText>
         </div>
         <div>
