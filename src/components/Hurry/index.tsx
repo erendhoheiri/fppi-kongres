@@ -32,7 +32,7 @@ const Hurry: React.FC = () => {
 
         <Button
           onClick={() => {
-            alert('Coming Soon');
+            window.open('https://kta-kongres-fppi.vercel.app', '_blank');
           }}
         >
           Daftar sebagai Peserta Kongres
