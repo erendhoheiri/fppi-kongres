@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
         <Title>Front Perjuangan Pemuda Indonesia</Title>
       </TitleContainer>
       <Location>
-        <FaMapMarkerAlt /> Jakarta, Indonesia
+        <FaMapMarkerAlt /> Bumi Perkemahan Cibubur, Jakarta
       </Location>
       <Button to='here' smooth={true} duration={500} spy={true}>
         Bergabung <FaCheckCircle />

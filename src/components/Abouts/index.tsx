@@ -44,7 +44,7 @@ const Abouts: React.FC = () => {
               <FaMapMarkerAlt />
             </span>
             <span>Lokasi: </span>
-            <span>Jakarta, Indonesia</span>
+            <span>Bumi Perkemahan Cibubur, Jakarta</span>
           </InfoItem>
         </div>
         <Button to='here' smooth={true} duration={500} spy={true}>
